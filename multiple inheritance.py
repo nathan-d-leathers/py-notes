@@ -85,3 +85,17 @@ zuck = MarkZuckerBorg('Mark', 'hacker', 8)
 
 # !!! Note: look up Doom 3 OOP game devleoper .com on werid trick to write better code
 
+
+
+# format_map subclass could be useful tool
+
+# str.format_map(mapping)
+# Similar to str.format(**mapping), except that mapping is used directly and not copied to a dict. This is useful if for example mapping is a dict subclass:
+
+# >>>
+# >>> class Default(dict):
+# ...     def __missing__(self, key):
+# ...         return key
+# ...
+# >>> '{name} was born in {country}'.format_map(Default(name='Guido'))
+# 'Guido was born in country'
